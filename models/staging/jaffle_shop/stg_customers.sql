@@ -6,4 +6,4 @@ with customers as (
         last_name
 
     from raw.jaffle_shop.customers)
-select * from customers;
+select * from customers

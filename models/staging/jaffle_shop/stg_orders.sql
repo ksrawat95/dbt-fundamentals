@@ -7,4 +7,4 @@ with orders as (
         status
 
     from raw.jaffle_shop.orders)
-select * from orders;
+select * from orders
