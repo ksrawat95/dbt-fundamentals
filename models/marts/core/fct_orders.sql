@@ -4,7 +4,7 @@ with orders as(
 payment as (
     select * from {{ ref('stg_payments')}}
 ),
-payment_order as (
+order_payments as (
     select
     order_id,
     sum(case when status = 'success' then amount end) as amount
