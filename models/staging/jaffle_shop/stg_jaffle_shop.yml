@@ -16,7 +16,7 @@ models:
           - unique
           - not_null
       - name: status
-        discription: "{{('order_status')}}"
+        description: "{{doc ('order_status') }}"
         tests:
           - accepted_values:
               values: ['return_pending','placed', 'shipped', 'completed', 'returned']
